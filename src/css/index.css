@@ -1,0 +1,25 @@
+body{
+    background-color: white;
+}
+
+.blog_img img{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top:5px;
+    left:10px;
+    
+}
+
+.signup_btn{
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #a3d278;
+    border-radius: 5px;
+    color: #a3d278;
+    float: right;
+    top:5px;
+    right: 10px;
+
+}
