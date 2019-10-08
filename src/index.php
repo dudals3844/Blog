@@ -1,4 +1,5 @@
 <?php
+
     $servername = "localhost";
 
     $dbname = "Hotel";
@@ -17,34 +18,16 @@
 
         $connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-①      $sql = "CREATE TABLE Reservation
-
-        (
-
-            ID INT PRIMARY KEY,
-
-            Name VARCHAR(30) NOT NULL,
-
-            ReservDate DATE NOT NULL,
-
-            RoomNum INT
-
-        )";
-
-        $connect->exec($sql);
-
-        echo "테이블 생성 성공!";
+        echo "서버와의 연결 성공!";
 
     }
 
-    catch(PDOException $ex)
+  catch(PDOException $ex)
 
     {
 
-        echo "테이블 생성 실패! : ".$ex->getMessage()."<br>";
+        echo "서버와의 연결 실패! : ".$ex->getMessage()."<br>";
 
     }
-
-    $connect = null;
 
 ?>
